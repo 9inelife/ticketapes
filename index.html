@@ -245,6 +245,17 @@
   transform: translateY(0px);
   opacity: 1;
 }
+.reveals{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.reveals.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 
                     @media (max-width:640px){
                      
@@ -510,7 +521,7 @@
                 <div class="col-lg-7">
                     <!-- Section Title -->
                     <div class="section-title text-white text-center">
-                        <h2>OUR TEAM</h2>
+                        <h2 class="reveals">OUR TEAM</h2>
                         <p></p>
                     </div>
                     <!-- End Section Title -->
@@ -992,17 +1003,17 @@
                 <div class="col-lg-7">
                     <!-- Section Title -->
                     <div class="section-title text-white text-center">
-                        <h2>ROAD MAP</h2>
+                        <h2 class="reveals">ROAD MAP</h2>
                         <!-- <p>NFTs are non-fungible tokens. They are unique items that you can't replace with something
                             else. for trading card is an NFT – you can't just replace it with any other card.</p> -->
                     </div>
                     <!-- End Section Title -->
                 </div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="01">
+                    <a  class="single-collection reveal" data-count="01">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1018,7 +1029,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="02">
+                    <a  class="single-collection reveals" data-count="02">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1032,7 +1043,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="03">
+                    <a  class="single-collection reveal" data-count="03">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1048,7 +1059,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="04">
+                    <a  class="single-collection reveals" data-count="04">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1066,7 +1077,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="05">
+                    <a  class="single-collection reveal" data-count="05">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1083,7 +1094,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="06">
+                    <a  class="single-collection reveals" data-count="06">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1099,7 +1110,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="07">
+                    <a  class="single-collection reveal" data-count="07">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1116,7 +1127,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="08">
+                    <a  class="single-collection reveals" data-count="08">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1137,7 +1148,7 @@
 
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="09">
+                    <a  class="single-collection reveal" data-count="09">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1155,7 +1166,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="10">
+                    <a  class="single-collection reveals" data-count="10">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1173,7 +1184,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Collection -->
-                    <a  class="single-collection" data-count="11">
+                    <a  class="single-collection reveal" data-count="11">
                         <div class="collection-img">
                             <img src="assets/img/prim1.jpg" alt="" style="width: 40px; height:40px;">
                         </div>
@@ -1376,10 +1387,10 @@ function reveal(){
 }
 </script>
 <script type="text/javascript">
-    window.addEventListener('scroll', reveals);
+    window.addEventListener('scroll', reveal);
     
     function reveal(){
-      var reveals = document.querySelectorAll('.reveal');
+      var reveals = document.querySelectorAll('.reveals');
     
       for(var i = 0; i < reveals.length; i++){
     
@@ -1396,6 +1407,7 @@ function reveal(){
       }
     }
     </script>
+   
 </body>
 
 </html>
