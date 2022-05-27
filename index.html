@@ -203,17 +203,17 @@
                 <div class="col-lg-6">
                     <!-- Banner Content -->
                     <div class="banner-content text-white mt-xl-5 pt-xl-2 mb-5 mb-lg-0">
-                        <h3 style="color: white;">Welcome to</h3>
+                        <h3 style="color: white;" >Welcome to</h3>
                       
-                        <h1>Ticket Apes <span>NFTs</span></h1>
+                        <h1 >Ticket Apes <span>NFTs</span></h1>
                         <ul class="list-info text-white">
                             <li>
                                 <!-- <h4><span class="counter">2222</span><span class="c1"></span></h4>
                                 <h6>Collection</h6> -->
                             </li>
-                            <li>
-                                <h4><span class="counter">2222</span><span class="c1"></span></h4>
-                                <h6>Collections</h6>
+                            <li class="reveal">
+                                <h4  class=""><span class="counter">2222</span><span class="c1"></span></h4>
+                                <h6  class="">Collections</h6>
                             </li>
                             <li>
                                 <!-- <h4><span class="counter">1000</span><span class="c1">+</span></h4>
@@ -221,11 +221,11 @@
                             </li>
                         </ul>
                         <div class="button-group">
-                            <a href="create.html" class="btn">
+                            <a href="create.html" class="btn reveal">
                                 <img src="assets/img/icons/discord.png" alt="" class="svg" style="width:22px ; height:22px ;">
                                Join Discord
                             </a>
-                            <a href="https://twitter.com/TicketApesNFT?t=mr238TI1Jx2f9oeClYs4AA&s=09" class="btn">
+                            <a href="https://twitter.com/TicketApesNFT?t=mr238TI1Jx2f9oeClYs4AA&s=09" class="btn reveal">
                                 <img src="assets/img/icons/twitter-round.svg" alt="" class="svg">
                                Twitter
                             </a>
@@ -234,6 +234,18 @@
                     <!-- End Banner Content -->
                 </div>
                 <style>
+                    .reveal{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
                     @media (max-width:640px){
                      
                       .imah{
@@ -347,7 +359,7 @@
     <!-- About -->
     <section class="pt-120 pb-120" id="coll">
         <div class="container">
-            <div class="row">
+            <div class="row reveal">
                 <div class="col-lg-5">
                     <!-- Section Title -->
                     <div class="section-title text-white mb-4">
@@ -357,21 +369,21 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="content text-white mt-n1">
-                        <p><h4 style="font-weight: bolder; color: #ff0076;">NFT Ticketing industry </h4> is a whole new world of endless possibilities
+                        <p  class="reveal"><h4 style="font-weight: bolder; color: #ff0076;">NFT Ticketing industry </h4> is a whole new world of endless possibilities
                              and great experiences, ripe for massive disruption and Ticket Apes NFT puts the key to unlocking this world at your finger tips.
-</p><p>
+</p><br><p  class="reveal">
     The Ticket Apes NFT<span style="font-size: larger; color: #ff0076;">(aka the Joe's)</span> is a unique collection of 2,222 digital collectibles (NFT's) flipping tickets and socializing on the Solana blockchain, each NFT is hand drawn featuring dozens of unique traits and rarities.
     
-    "Imagine a club where members get to socialize and participate in social gatherings like sports events, musical concerts, conferences and other live events(including events on the metaverse)".</p>
-                            <h4 style="color: #ff0076;">WHY APE IN?</h4>
-                        <p>Owning a "Joe" will grant you exclusive access to the TicketDAO, which invariably gives you guaranteed access to selected exclusive events happening around the world.
+    "Imagine a club where members get to socialize and participate in social gatherings like sports events, musical concerts, conferences and other live events(including events on the metaverse)"</p>
+                            <h4 style="color: #ff0076;"  class="reveal">WHY APE IN?</h4>
+                        <p  class="reveal">Owning a "Joe" will grant you exclusive access to the TicketDAO, which invariably gives you guaranteed access to selected exclusive events happening around the world.
                             <br>
-                           <h6  style="font-size: larger; color: #ff0076;" >THE Ticket DAO</h6> 
-                            The Ticket DAO is primarily developed to help members access tickets to important events which ordinarily would be difficult to access due to high demand or inflation on secondary market places. By partnering with event organisers and NFT/Digital ticket providers we will help community members gain early access to selected events.
-                            <p> Holding at least one NFT automatically makes you a stakeholder and a beneficiary of all our future ventures. Check roadmap for detail.
+                           <h6  style="font-size: larger; color: #ff0076;"  class="reveal" >THE Ticket DAO</h6> 
+                           <p  class="reveal"> The Ticket DAO is primarily developed to help members access tickets to important events which ordinarily would be difficult to access due to high demand or inflation on secondary market places. By partnering with event organisers and NFT/Digital ticket providers we will help community members gain early access to selected events.</p>
+                            <p  class="reveal"> Holding at least one NFT automatically makes you a stakeholder and a beneficiary of all our future ventures. Check roadmap for detail.
                                 We shall setup a DAO vault with a significant portion of funds raised from the mint and royalties.
                             </p>
-                           <p> Members suggest and vote on what event tickets to be acquire weekly, to be collected by
+                           <p  class="reveal"> Members suggest and vote on what event tickets to be acquire weekly, to be collected by
                             members at 5% -10% discount, ticket holders can choose to attend the live event or resell tickets 
                             for profit. Also, Members vote on what projects to invest in and when to liquidate them. Re-invest 
                             the profits or withdraw and distribute them.</p>
@@ -379,8 +391,8 @@
                             
                            
                             </p>
-                            <h5 style="color: #ff0076;">Other benefits:</h5>
-                            <ul><li>Expand Your Network</li>
+                            <h5 style="color: #ff0076;"  class="reveal">Other benefits:</h5>
+                            <ul  class="reveal"><li>Expand Your Network</li>
                                 <li>Exclusive Merchandise</li>
                                 <li>Special Airdrops & Giveaways</li>
                                 <li> Primate Social DAO Community Fund</li>
@@ -1338,6 +1350,52 @@
 
     <!-- ======= Custom JS ======= -->
     <script src="assets/js/custom.js"></script>
+</script>
+<!-- Footer -->
+
+<!-- Scripts -->
+<script type="text/javascript">
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++){
+
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+</script>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveals);
+    
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+    
+      for(var i = 0; i < reveals.length; i++){
+    
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+    
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
 </body>
 
 </html>
