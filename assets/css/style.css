@@ -1062,7 +1062,7 @@ table thead th, .nice-select .option, .widget.widget_recent_entries ul li .post-
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-/* #170522 0%, #4f0527 50%, #1f0630 */
+
 .btn {
   background: #590f87;
   background: -o-linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%);
@@ -1459,7 +1459,6 @@ blockquote cite:after {
 .walletCarousel .swiper-slide {
   width: 190px;
 }
-
 
 .wallet {
   height: 190px;
@@ -2803,9 +2802,9 @@ textarea.form-control {
 }
 
 .single-product .product-top {
-  padding-bottom: 3px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 2px 2px 2px;
+  padding: 28px 30px 18px;
 }
 
 .single-product .product-top * {
@@ -2813,11 +2812,11 @@ textarea.form-control {
 }
 
 .single-product .product-top h5 {
-  margin-bottom: 6px;
+  margin-bottom: 13px;
 }
 
 .single-product .product-bottom {
-  padding: 2px 3px 3px;
+  padding: 20px 30px 30px;
 }
 
 .single-product.style--one .product-content {
@@ -5084,7 +5083,7 @@ textarea.form-control {
   left: 0;
   bottom: 0;
   z-index: 1;
-  padding: 8px 0px 8px 8px;
+  padding: 55px 0px 60px 55px;
   width: 100%;
 }
 
@@ -5277,11 +5276,7 @@ textarea.form-control {
     width: 100%;
   }
 }
-@media only screen and (max-width: 600px) {
-  .section-shape:after {
-    width: 100%;
-  }
-}
+
 .section-shape-right:after {
   left: auto;
   right: 0;
