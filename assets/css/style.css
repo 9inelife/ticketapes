@@ -5959,6 +5959,11 @@ opacity: 1;
                  transform: translateY(0px)
              }
          }
-
+ .jok{
+    background: #590f87;
+    background: -o-linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%);
+    background: linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#590f87', endColorstr='#590f87',GradientType=1 );
+  }
 
 /*# sourceMappingURL=style.css.map */
