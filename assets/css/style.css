@@ -5959,6 +5959,23 @@ opacity: 1;
                  transform: translateY(0px)
              }
          }
+
+.tick{  
+	 animation: jump 2s linear infinite;
+            }
+ @keyframes jump{
+             0%{
+                 transform: translateY(0px)
+             }
+              50%{
+                 transform: translateY(10px)
+             }
+              100%{
+                 transform: translateY(0px)
+             }
+         }
+
+
  .jok{
     background: #590f87;
     background: -o-linear-gradient(45deg, #590f87 0%, #ff0076 50%, #590f87 100%);
